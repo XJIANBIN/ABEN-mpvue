@@ -1,0 +1,25 @@
+<import src="card$785a057e" />
+<template name="index$eec01a42">
+  <view class="_div data-v-15ab1bcd container">
+    <image class="_img data-v-15ab1bcd bg-img" src="/static/img/bg.jpg" alt></image>
+    <view class="_div data-v-15ab1bcd content">
+      <view class="_div data-v-15ab1bcd userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <image class="_img data-v-15ab1bcd userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <view class="_div data-v-15ab1bcd userinfo-nickname">
+          <template data="{{...$root[$kk+'0'], $root}}" is="card$785a057e"></template>
+        </view>
+      </view>
+      <view class="_div data-v-15ab1bcd usermotto">
+        <view class="_div data-v-15ab1bcd user-motto">
+          <template data="{{...$root[$kk+'1'], $root}}" is="card$785a057e"></template>
+        </view>
+      </view>
+      <view class="_div data-v-15ab1bcd jump-in" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-15ab1bcd scroll-block">
+          <label class="_span data-v-15ab1bcd icon-left">>></label>
+        </view>
+        <label class="_span data-v-15ab1bcd">向右滑动进入</label>
+      </view>
+    </view>
+  </view>
+</template>
